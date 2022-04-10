@@ -25,6 +25,9 @@ app.get("/", (req, res, next) => {
 const pharmacyItemsRouter = require("./api/routes/pharmacy_items.routes");
 app.use("/pharmacyItem", pharmacyItemsRouter);
 
+const pharmacyStockRouter = require("./api/routes/pharmacy_stock.routes");
+app.use("/pharmacyStock", pharmacyStockRouter);
+
 
 
 
