@@ -1,5 +1,5 @@
 import React from 'react';
-import './staffStyles.css';
+import './common_styles.css';
 import LogoImg from '../../images/logo.png';
 
 export default function Logo(){

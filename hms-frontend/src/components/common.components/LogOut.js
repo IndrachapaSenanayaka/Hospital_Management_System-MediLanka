@@ -1,5 +1,5 @@
 import React from 'react';
-import './staffStyles.css';
+import './common_styles.css';
 
 export default function LogOut(){
 

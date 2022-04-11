@@ -1,9 +1,9 @@
 import React from "react";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import '../../common.components/common_styles.css';
 import Logo from "../../common.components/Logo";
 import LogOut from "../../common.components/LogOut";
 import SidebarProfile from "../../common.components/SidebarProfile";
-import '../../common.components/common_styles.css';
 import StockManagerSidebarNavigation from "./Stock_manager_sidebarNavigation";
 
 
