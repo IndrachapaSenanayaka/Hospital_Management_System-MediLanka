@@ -8,10 +8,7 @@ function App() {
     <Router>
       <div>
         <Switch>
-          {/* <Route exact path="/customer/appointment" component={CustomerAppointment}/>
-          <Route exact path="/customer/registration" component={CustomerRegistration}/>
-          <Route exact path="/staff/admin" component={Admin}/>
-          <Route exact path="/staff/pharmacy-stock-manager" component={PharmacyStockManager}/> */}
+          <Route path="/staff/stock-manager" component={StockManager}/>
         </Switch>
       </div>
     </Router>
