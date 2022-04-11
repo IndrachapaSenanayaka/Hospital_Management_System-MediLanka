@@ -1,6 +1,10 @@
 import React from "react";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import '../staffStyles.css';
+import Logo from "../../common.components/Logo";
+import LogOut from "../../common.components/LogOut";
+import SidebarProfile from "../../common.components/SidebarProfile";
+import '../../common.components/common_styles.css';
+import StockManagerSidebarNavigation from "./Stock_manager_sidebarNavigation";
 
 
 
@@ -14,11 +18,9 @@ export default function StockManager(){
                             <div className="flex-box-container">
                                 <div className="flex-box sidebar-container">
                                     <Logo/>
-                                    <StaffSidebarProfile/>
-
+                                    <SidebarProfile/>
                                     <StockManagerSidebarNavigation/>
-                                    
-                                    <StaffLogOut/>
+                                    <LogOut/>
                                 </div>
                                 <div className="flex-box content-container">                    
                                     

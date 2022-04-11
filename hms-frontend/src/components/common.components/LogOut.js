@@ -1,7 +1,7 @@
 import React from 'react';
 import './staffStyles.css';
 
-export default function StaffLogOut(){
+export default function LogOut(){
 
     return(
         <div class="sidebar-item logout">

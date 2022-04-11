@@ -2,7 +2,7 @@ import React from 'react';
 import './staffStyles.css';
 import profile from '../../images/profile.png';
 
-export default function StaffSidebarProfile(){
+export default function SidebarProfile(){
 
     return(
         <div className="sidebar-item profile-container">

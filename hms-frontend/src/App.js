@@ -1,5 +1,6 @@
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import StockManager from './components/staff.components/stock_manager.components/Staff.stock_manager';
 
 
 

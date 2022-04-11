@@ -1,12 +1,12 @@
 import React from 'react';
 import './staffStyles.css';
-import Logo from '../../images/logo.png';
+import LogoImg from '../../images/logo.png';
 
-export default function StaffLogo(){
+export default function Logo(){
 
     return(
         <div className="sidebar-item logo-container">
-              <img className="logoImg" alt="logo" src={Logo}/>
+              <img className="logoImg" alt="logo" src={LogoImg}/>
         </div>
     );
 }
