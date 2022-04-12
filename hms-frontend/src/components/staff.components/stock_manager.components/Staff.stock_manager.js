@@ -13,7 +13,7 @@ export default function StockManager(){
                         <div className="main-container">
                             <div className="flex-box-container">
                                 <div className="flex-box sidebar-container">
-                                    <StaffLogo/>
+                                    <Logo/>
                                     <StaffSidebarProfile/>
 
                                     <StockManagerSidebarNavigation/>
