@@ -20,6 +20,7 @@ html, body {
   border-radius: 10px;
 }
 
+/* main container style */
 .main-container {
   position: fixed;
   padding: 4rem 4rem 4rem 4rem;
@@ -27,6 +28,7 @@ html, body {
   height: 100%;
 }
 
+/* flex box container (sidebar, content container)*/
 .flex-box-container {
   height: 595px;
   width: 1408px;
@@ -35,9 +37,6 @@ html, body {
   align-items: stretch;
 }
 
-/*.flex-box {
-  
-}*/
 
 /*begin of sidebar css*/
 
@@ -163,6 +162,7 @@ html, body {
 
 /*end of logout css*/
 
+/* content container */
 .content-container {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 0 40px 40px 0;
