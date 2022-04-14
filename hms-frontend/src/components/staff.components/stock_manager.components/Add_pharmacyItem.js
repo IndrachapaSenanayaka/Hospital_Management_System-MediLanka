@@ -1,5 +1,5 @@
 import React from 'react';
-import '../gridContainerStyles.css';
+import '../../common.components/gridContainerStyles.css';
 import './gridItemStyles.css';
 import './stockManagerStyles.css';
 import axios from "axios";

@@ -5,6 +5,7 @@ import Logo from "../../common.components/Logo";
 import LogOut from "../../common.components/LogOut";
 import SidebarProfile from "../../common.components/SidebarProfile";
 import StockManagerSidebarNavigation from "./Stock_manager_sidebarNavigation";
+import AddNewItem from "./Add_pharmacyItem";
 
 
 
@@ -23,9 +24,7 @@ export default function StockManager(){
                                     <LogOut/>
                                 </div>
                                 <div className="flex-box content-container">                    
-                                    
-                                    
-
+                                    <Route exact path="/staff/stock-manager/add-item" component={AddNewItem}/> 
                                 </div>
                             </div>                
                         </div>
