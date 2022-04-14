@@ -1,6 +1,6 @@
 import './App.css';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import StockManager from './components/staff.components/stock_manager.components/Staff.stock_manager';
+import StockManager from './components/staff.components/stock_manager.components/Staff.stock_manager.routes';
 
 
 
