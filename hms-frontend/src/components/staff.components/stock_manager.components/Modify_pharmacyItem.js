@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {useParams} from "react-router-dom";
 import {Link} from 'react-router-dom';
-import '../gridContainerStyles.css';
+import '../../common.components/gridContainerStyles.css';
 import './gridItemStyles.css';
 import './stockManagerStyles.css';
 import axios from "axios";
@@ -9,20 +9,14 @@ import { TextField } from '../../Input_field.components/Text_field';
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import { CategoryField } from './Input_field.components/Category_field';
-import { v4 } from "uuid";
-import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
-import { storage } from '../../../configs';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { FileField } from '../../Input_field.components/FileInput_field';
-import docImg from '../../../images/docimg1.png';
 import Tippy from '@tippy.js/react';
 import 'tippy.js/dist/tippy.css';
 import capsulepillsimg from '../../../images/capsulepillsimg1.png';
 
 
-const SUPPORTED_FORMATS = ["image/jpeg", "image/jpg"];
-const FILE_SIZE = 1024 * 1024;
+
 
 
 toast.configure()
@@ -39,20 +33,7 @@ const itemValidate = Yup.object().shape({
   dosage:Yup.string()
     .required("Dosage is required")
     .min(1, "Dosage should not be zero")
-    .matches(/^[0-9]+([m]+[g]|[k]+[g]|[m]+[l]|l|g)$/, "Invalid dosage format (500mg, 15g, 50ml)"),
-  // image:Yup.mixed()
-  //   .nullable()
-  //   .required("Image is required")
-  //   .test(
-  //       "fileSize",
-  //       "Uploaded file is too big (Max file size is 1Mb)",
-  //       (value) => !value || (value && value.size <= FILE_SIZE) //1Mb
-  //   )
-  //   .test(
-  //       "fileFormat",
-  //       "Upload file has unsupported format (jpg and jpeg files only)",
-  //       (value) => !value || (value && SUPPORTED_FORMATS.includes(value?.type))
-  //   ),
+    .matches(/^[0-9]+([m]+[g]|[k]+[g]|[m]+[l]|l|g)$/, "Invalid dosage format (500mg, 15g, 50ml)")
 });
 
 
