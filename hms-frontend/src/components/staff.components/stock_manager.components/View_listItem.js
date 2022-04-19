@@ -61,18 +61,7 @@ export default function ViewListItem(){
                     
                     <tbody>
                       
-                    {items.filter(val => {
-                      if(searchTerm === ""){
-                        return val;
-                      }else if(
-                        val.item_code.toLowerCase().includes(searchTerm.toLocaleLowerCase()) ||
-                        val.generic_name.toLowerCase().includes(searchTerm.toLocaleLowerCase())||
-                        val.brand_name.toLowerCase().includes(searchTerm.toLocaleLowerCase())||
-                        val.category.toLowerCase().includes(searchTerm.toLocaleLowerCase())||
-                        val.dosage.toLowerCase().includes(searchTerm.toLocaleLowerCase())
-                      ){
-                        return val
-                      }  
+                      
                       }).map((item, key) => (
                       <tr key={key}>
                         <th>{item.item_code}</th>                        
