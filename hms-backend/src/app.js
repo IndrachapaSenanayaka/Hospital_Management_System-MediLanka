@@ -28,6 +28,9 @@ app.use("/pharmacyItem", pharmacyItemsRouter);
 const pharmacyStockRouter = require("./api/routes/pharmacy_stock.routes");
 app.use("/pharmacyStock", pharmacyStockRouter);
 
+const pharmacySaleRouter = require("./api/routes/pharmacy_sales.routes");
+app.use("/pharmacySale", pharmacySaleRouter);
+
 
 
 
