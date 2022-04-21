@@ -54,3 +54,29 @@ router.route("/add").post((req,res) => {
     })
 
 });
+
+//
+router.route("/group/:month").get(async (req,res) => {
+    let month = req.params.month;
+   
+
+    const item = await PharmacySale.aggregate(
+        [   
+            {$match: {sold_month: {$in: [month]}}},
+            {$group: {
+                        _id: {brand_name: "$brand_name", item_code: "$item_code", generic_name: "$generic_name", dosage: "$dosage",   imageURL: "$imageURL"}, 
+                        total: {$sum: "$total_amount"}, 
+                        quantity: {$sum: "$quantity"}
+                    }
+            },
+            {$project: {_id: 0, item_code: "$_id.item_code", brand_name: "$_id.brand_name", generic_name: "$_id.generic_name", imageURL: "$_id.imageURL", dosage: "$_id.dosage", total: 1, quantity: 1}},
+            {$sort: {total: -1}},
+        ]
+        ).then((item) => {
+       
+        res.json(item);
+    }).catch((err) => {
+        console.log(err.message);
+        res.status(500).send({status: "Error with get items"});
+    })
+});
