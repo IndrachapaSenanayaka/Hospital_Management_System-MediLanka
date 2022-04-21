@@ -80,3 +80,32 @@ router.route("/group/:month").get(async (req,res) => {
         res.status(500).send({status: "Error with get items"});
     })
 });
+
+//
+router.route("/total/:month").get(async (req,res) => {
+    let month = req.params.month;
+   
+
+    const item = await PharmacySale.aggregate(
+        [   
+            {$match: {sold_month: {$in: [month]}}},
+            {$group: {
+                        _id: {sold_month: "$sold_month"}, 
+                        total: {$sum: "$total_amount"}, 
+                        quantity: {$sum: "$quantity"}
+                    }
+            },
+            {$project: {_id: 0, sold_month: "$_id.sold_month", total: 1, quantity: 1}}
+        ]
+        ).then((item) => {
+       
+        res.json(item);
+    }).catch((err) => {
+        console.log(err.message);
+        res.status(500).send({status: "Error with get items"});
+    })
+})
+
+
+
+module.exports = router;
