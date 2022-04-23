@@ -21,8 +21,7 @@ export default function PharmacyCashier(){
                       
                     </div>
                     <div className="flex-box content-container">                    
-                      
-                            
+
                     </div>
                   </div>                
                 </div>
