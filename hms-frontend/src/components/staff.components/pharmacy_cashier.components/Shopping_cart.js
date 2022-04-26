@@ -124,7 +124,19 @@ export default function ShoppingCart(){
                   </table>    
                 </div>            
             </div>
-            
+            <div className="grid-item item-2">
+              <div className="scroll-item scroll-item-2">
+                <tr>
+                  <td><button className="btn btn-primary" onClick={ViewTotal}>Total</button></td>
+                  <td><h3 className="text-danger">&emsp;Total Rs/= {totPrice}</h3></td>
+                  <td ><strong><p className="blue-hedding">&emsp;Cash Rs/=</p></strong></td>
+                  <td><input className="form-control" name="quantity" type="number" value={cash} autoComplete="off" onChange={(e)=>{setCash(e.target.value)}}/></td>
+                  <td><strong><p className="blue-hedding">&emsp;&emsp;Balance Rs/= {cash - totPrice}&emsp;</p></strong></td>
+                  <td><button className="btn btn-success" onClick={PayCart}>Pay</button>&emsp;&emsp;</td>
+                  <td><button className="btn btn-danger" onClick={CancelCart}>Cancel</button></td>
+                </tr>
+              </div>
+            </div>
         </div>
     );
 }
