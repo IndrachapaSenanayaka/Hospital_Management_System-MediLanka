@@ -7,6 +7,7 @@ import './qrCodeScanner.css';
 import './shoppingCart.css';
 import './gridContainerStyles.css';
 import QRcodeScanner from "./QR_code_scanner";
+import ShoppingCart from "./Shopping_cart";
 
 export default function PharmacyCashier(){
 
@@ -22,7 +23,7 @@ export default function PharmacyCashier(){
                       <Route path="/staff/pharmacy-cashier" component={QRcodeScanner}/>
                     </div>
                     <div className="flex-box content-container">                    
-
+                      <Route exact path="/staff/pharmacy-cashier/shopping-cart" component={ShoppingCart}/>
                     </div>
                   </div>                
                 </div>
