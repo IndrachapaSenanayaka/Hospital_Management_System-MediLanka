@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {useParams} from "react-router-dom";
 import {Link} from 'react-router-dom';
-import '../../common.components/gridContainerStyles.css';
-import './gridItemStyles.css';
-import './stockManagerStyles.css';
 import axios from "axios";
 import { TextField } from '../../Input_field.components/Text_field';
 import { Formik, Form } from "formik";

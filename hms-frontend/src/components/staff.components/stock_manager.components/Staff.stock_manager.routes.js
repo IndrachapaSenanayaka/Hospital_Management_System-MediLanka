@@ -1,6 +1,10 @@
 import React from "react";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import '../../common.components/common_styles.css';
+import '../../common.components/gridContainerStyles.css';
+import './gridItemStyles.css';
+import './stockManagerStyles.css';
+import '../../common.components/tableStyles.css';
 import Logo from "../../common.components/Logo";
 import LogOut from "../../common.components/LogOut";
 import SidebarProfile from "../../common.components/SidebarProfile";
@@ -35,7 +39,7 @@ export default function StockManager(){
                                     <Route exact path="/staff/stock-manager/list-item" component={ViewListItem}/>
                                     <Route exact path="/staff/stock-manager/list-item/list-stock/add-stock/:id" component={AddNewStock}/>
                                     <Route exact path="/staff/stock-manager/list-item/list-stock/:id" component={ViewListStock}/>
-                                   
+                                    <Route exact path="/staff/stock-manager/sales-report" component={SalesReport}/>
                                     <Route exact path="/staff/stock-manager/delete-item/:id" component={DeleteItem}/>
                                     <Route exact path="/staff/stock-manager/delete-stock/:itemId/:stockId" component={DeleteStock}/>
                                     <Route exact path="/staff/stock-manager/list-item/edit-item/:itemId" component={ModifyItem}/>

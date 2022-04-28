@@ -43,3 +43,20 @@
 	height: 150px;
 	padding-right: 30px;
 }
+
+/* View_sales_report.js styles */
+.reportMonth {
+	padding-left: 500px;
+}
+
+.reportDownloadBtn {
+	padding-left: 100px;
+}
+
+.totalQuantity {
+	padding-left: 600px;
+}
+
+.totalIncome {
+	padding-left: 30px;
+}

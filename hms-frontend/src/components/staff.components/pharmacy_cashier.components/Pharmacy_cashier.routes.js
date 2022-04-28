@@ -1,11 +1,11 @@
 import React from "react";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import StaffLogo from "../Staff_logo";
+import Logo from "../../common.components/Logo";
 import './pharmacyCashierStyles.css';
-import './gridItemStyles.css';
 import './qrCodeScannerStyles.css';
+import '../../common.components/gridContainerStyles.css';
 import './shoppingCartStyles.css';
-import './gridContainerStyles.css';
+import './gridItemStyles.css';
 import QRcodeScanner from "./QR_code_scanner";
 import ShoppingCart from "./Shopping_cart";
 
@@ -19,7 +19,7 @@ export default function PharmacyCashier(){
                 <div className="main-container">
                   <div className="flex-box-container">
                     <div className="flex-box sidebar-container">
-                      <StaffLogo/>
+                      <Logo/>
                       <Route path="/staff/pharmacy-cashier" component={QRcodeScanner}/>
                     </div>
                     <div className="flex-box content-container">                    

@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import {Link} from 'react-router-dom';
-import '../../common.components/tableStyles.css';
-import './stockManagerStyles.css';
 import View from '../../../images/view1.png';
 import Edit from '../../../images/edit.png';
 import Delete from '../../../images/delete.png';

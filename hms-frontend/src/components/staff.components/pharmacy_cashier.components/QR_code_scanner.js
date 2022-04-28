@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { useHistory } from "react-router-dom";
 import QrReader from 'react-qr-reader';
-import './qrCodeScanner.css';
 import axios from 'axios';
 
 
