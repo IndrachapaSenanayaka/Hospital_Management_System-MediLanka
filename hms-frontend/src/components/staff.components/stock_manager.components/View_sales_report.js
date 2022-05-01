@@ -44,7 +44,22 @@ export default function SalesReport(){
     }  
   }
   
-  
+  function Download(){
+    
+    const doc = new jsPDF()
+    doc.text("Monthly Sales Report                               Month : "+month,15,10)
+    doc.autoTable({
+      columns:columns.map(col=>({...col,dataKey:col.field})),
+      body:items
+    })
+    doc.autoTable({
+      columns:colum.map(col=>({...col,dataKey:col.field})),
+      body:wholeData
+    })
+
+    doc.save("table.pdf")
+
+  };
 
   return(
     <div className="grid-container grid-container-6">
