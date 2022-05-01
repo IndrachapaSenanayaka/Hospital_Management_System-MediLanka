@@ -24,7 +24,25 @@ export default function SalesReport(){
     {title: "Total Income", field: "total",}
   ]
 
-  
+  const Filter = (e)=>{
+
+    const filterMonth = e.currentTarget.value;
+
+    setMonth(filterMonth);
+
+    if(filterMonth){
+      axios.get("http://localhost:8070/pharmacySale/group/"+ filterMonth).then((res) => {
+          setItems(res.data);
+        }).catch((error) => {
+          alert(error.message);
+        });
+      axios.get("http://localhost:8070/pharmacySale/total/"+ filterMonth).then((res) => {
+        setWholeData(res.data);
+      }).catch((error) => {
+        alert(error.message);
+      });
+    }  
+  }
   
   
 
