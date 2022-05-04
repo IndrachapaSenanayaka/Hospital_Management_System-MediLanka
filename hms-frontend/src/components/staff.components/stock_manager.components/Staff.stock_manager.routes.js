@@ -17,6 +17,7 @@ import DeleteStock from "./Delete_stock";
 import DeleteItem from "./Delete_item";
 import ModifyItem from "./Modify_pharmacyItem";
 import ModifyStock from "./Modify_pharmacyStock";
+import SalesReport from "./View_sales_report";
 
 
 
