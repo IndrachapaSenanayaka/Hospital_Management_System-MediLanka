@@ -42,17 +42,6 @@ export default function ViewListStock(){
 
     return(
         <div className="grid-container grid-container-3">
-            {/* <div className="grid-item item-4">
-                <div className="scroll-item scroll-item-4">
-                    <tr><td>{item.item_code}</td></tr>
-                    <tr><td><img className="itemImage" src={item.imageURL} alt="Item"/></td></tr>
-                    <tr><td>{item.generic_name}</td></tr>
-                    <tr><td>{item.brand_name}</td></tr>
-                    <tr><td>{item.category}</td></tr>
-                    <tr><td>{item.dosage}</td></tr>
-                    
-                </div>
-            </div>  */}
             <div className="grid-item item-5">
                 <h2 className="blue-hedding">Stock</h2>
                 <tr>

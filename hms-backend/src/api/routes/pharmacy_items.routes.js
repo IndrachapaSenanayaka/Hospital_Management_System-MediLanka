@@ -79,37 +79,6 @@ router.route("/delete/:id").delete(async (req,res) => {
 
 
 //Update Pharmacy Items
-// router.route("/update/:id").put((req,res) => {
-
-//     let itemId = req.params.id;
-
-//     const item_code = itemId;
-//     const generic_name = req.body.genericName;
-//     const brand_name = req.body.brandName;
-//     const category = req.body.category;
-//     const dosage = req.body.dosage;
-//     const imageURL = req.body.imageURL;
-    
-
-//     const updatePharmacyItem = new PharmacyItem({
-
-//         item_code,
-//         generic_name,
-//         brand_name,
-//         category,
-//         dosage,
-//         imageURL
-//     });
-    
-//     PharmacyItem.findOneAndUpdate({item_code: itemId}, updatePharmacyItem).then(() => {
-//         res.json("Pharmacy Item Updated")
-//     }).catch((err) => {
-//         console.log(err);
-//     }) 
-
-// });
-
-//Update Pharmacy Items
 router.route("/update/:id").put(async (req,res) => {
 
     let itemId = req.params.id;
