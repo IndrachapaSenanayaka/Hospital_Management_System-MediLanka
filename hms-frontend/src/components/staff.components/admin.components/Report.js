@@ -99,7 +99,7 @@ export default function Report() {
                             ))}
                         </tbody>
                     </table>
-                    <button type="submit" className="button-71" onClick={(genPDF)} role="button"><i className="fa fa-file-pdf"></i> Download as PDF</button>
+                    <button type="submit" className="button-71" onClick={(genPDF)} role="button"><i className="fa fa-file-pdf"></i> Generate report as PDF</button>
                 </div>
             </div>
         </div>

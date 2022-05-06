@@ -1,5 +1,8 @@
+/*View doctors list code*/
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import jsPDF from 'jspdf';
+import 'jspdf-autotable';
 import { Link } from 'react-router-dom';
 
 
@@ -9,6 +12,21 @@ import { Link } from 'react-router-dom';
 
 
 export default function ViewDocList() {
+    let genPDF = () => {
+        const doc = new jsPDF()
+        doc.setFontSize(20);
+        doc.text("Doctors details report", 70, 10)
+
+        doc.autoTable({
+            html: '#details'
+        })
+        doc.save("StaffReport.pdf");
+
+        toast.info("Report generated!!!", {
+            position: toast.POSITION.TOP_CENTER
+        });
+
+    }
 
     const [docs, setDocs] = useState([]);
     useEffect(() => {
@@ -23,7 +41,7 @@ export default function ViewDocList() {
             <div className="grid-item-6 item-1">
                 <div className="scroll-item-1">
                     <h1 style={{ textAlign: 'center' }}>Doctor List</h1>
-                    <table className="table table-striped table-hover table-condensed ">
+                    <table className="table table-striped table-hover table-condensed " id="details">
 
                         <thead>
                             <tr>
@@ -52,6 +70,7 @@ export default function ViewDocList() {
                     </table>
 
                 </div>
+                <button type="submit" className="button-71" onClick={(genPDF)} role="button"><i className="fa fa-file-pdf"></i> Download as PDF</button>
             </div>
         </div>
 
