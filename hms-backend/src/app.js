@@ -21,6 +21,17 @@ app.get("/", (req, res, next) => {
     next();
 });
 
+
+const pharmacyItemsRouter = require("./api/routes/pharmacy_items.routes");
+app.use("/pharmacyItem", pharmacyItemsRouter);
+
+const pharmacyStockRouter = require("./api/routes/pharmacy_stock.routes");
+app.use("/pharmacyStock", pharmacyStockRouter);
+
+const pharmacySaleRouter = require("./api/routes/pharmacy_sales.routes");
+app.use("/pharmacySale", pharmacySaleRouter);
+
+
 const staffRouter = require("./api/routes/staffs");
 app.use("/staff", staffRouter);
 
@@ -29,8 +40,3 @@ app.use("/pharmacist", pharmacistRouter);
 
  const receptionistRouter = require("./api/routes/receptionist");
 app.use("/receptionist", receptionistRouter);
-
-
-
-
-
