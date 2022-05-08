@@ -4,6 +4,8 @@ import StockManager from './components/staff.components/stock_manager.components
 import PharmacyCashier from './components/staff.components/pharmacy_cashier.components/Pharmacy_cashier.routes';
 import Login from './components/staff.components/admin.components/Login';
 import Admin from './components/staff.components/admin.components/Admin';
+import Doctor from './components/staff.components/doctor.components/Doctor';
+import Customer from './components/customer.components/registration.components/Cusomer';
 
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
       <Route path="/staff/pharmacy-cashier" component={PharmacyCashier}/>
       <Route path="/staff/admin" component={Admin} />
       <Route path="/login" component={Login} />
+      <Route path="/doctor/" component = {Doctor}/>
+      <Route path="/customer/" component = {Customer}/>
     </Router>
   );
 }
