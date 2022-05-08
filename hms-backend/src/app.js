@@ -32,5 +32,11 @@ const pharmacySaleRouter = require("./api/routes/pharmacy_sales.routes");
 app.use("/pharmacySale", pharmacySaleRouter);
 
 
+const staffRouter = require("./api/routes/staffs");
+app.use("/staff", staffRouter);
 
+ const pharmacistRouter = require("./api/routes/pharmacist");
+app.use("/pharmacist", pharmacistRouter);
 
+ const receptionistRouter = require("./api/routes/receptionist");
+app.use("/receptionist", receptionistRouter);
