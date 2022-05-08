@@ -6107,12 +6107,15 @@ jsonpointer@^5.0.0:
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 jsqr@^1.2.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/jsqr/-/jsqr-1.4.0.tgz#8efb8d0a7cc6863cb6d95116b9069123ce9eb2d1"
   integrity sha512-dxLob7q65Xg2DvstYkRpkYtmKm2sPJ9oFhrhmudT1dZvNFFTlroai3AWSpLey/w5vMcLBXRgOJsbXpdN9HzU/A==
 
 >>>>>>> 95974ccc1c4a191e29eb7c8e7cafaacdfb2768b8
+>>>>>>> c4429d22173b41811f5aabc64aa0d8d0adfd229d
 "jsx-ast-utils@^2.4.1 || ^3.0.0", jsx-ast-utils@^3.2.1:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-3.2.2.tgz#6ab1e52c71dfc0c0707008a91729a9491fe9f76c"
@@ -7538,8 +7541,12 @@ prompts@^2.0.1, prompts@^2.4.2:
 <<<<<<< HEAD
 prop-types@^15.6.2, prop-types@^15.8.1:
 =======
+<<<<<<< HEAD
+prop-types@^15.6.2, prop-types@^15.8.1:
+=======
 prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
 >>>>>>> 95974ccc1c4a191e29eb7c8e7cafaacdfb2768b8
+>>>>>>> c4429d22173b41811f5aabc64aa0d8d0adfd229d
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -7711,6 +7718,8 @@ react-is@^17.0.1:
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 react-qr-reader@2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/react-qr-reader/-/react-qr-reader-2.2.1.tgz#dc89046d1c1a1da837a683dd970de5926817d55b"
@@ -7721,6 +7730,7 @@ react-qr-reader@2.2.1:
     webrtc-adapter "^7.2.1"
 
 >>>>>>> 95974ccc1c4a191e29eb7c8e7cafaacdfb2768b8
+>>>>>>> c4429d22173b41811f5aabc64aa0d8d0adfd229d
 react-refresh@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
@@ -8056,6 +8066,8 @@ rollup@^2.43.1:
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 rtcpeerconnection-shim@^1.2.15:
   version "1.2.15"
   resolved "https://registry.yarnpkg.com/rtcpeerconnection-shim/-/rtcpeerconnection-shim-1.2.15.tgz#e7cc189a81b435324c4949aa3dfb51888684b243"
@@ -8064,6 +8076,7 @@ rtcpeerconnection-shim@^1.2.15:
     sdp "^2.6.0"
 
 >>>>>>> 95974ccc1c4a191e29eb7c8e7cafaacdfb2768b8
+>>>>>>> c4429d22173b41811f5aabc64aa0d8d0adfd229d
 run-parallel@^1.1.9:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/run-parallel/-/run-parallel-1.2.0.tgz#66d1368da7bdf921eb9d95bd1a9229e7f21a43ee"
@@ -8157,12 +8170,15 @@ schema-utils@^4.0.0:
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 sdp@^2.12.0, sdp@^2.6.0:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/sdp/-/sdp-2.12.0.tgz#338a106af7560c86e4523f858349680350d53b22"
   integrity sha512-jhXqQAQVM+8Xj5EjJGVweuEzgtGWb3tmEEpl3CLP3cStInSbVHSg0QWOGQzNq8pSID4JkpeV2mPqlMDLrm0/Vw==
 
 >>>>>>> 95974ccc1c4a191e29eb7c8e7cafaacdfb2768b8
+>>>>>>> c4429d22173b41811f5aabc64aa0d8d0adfd229d
 select-hose@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/select-hose/-/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
@@ -9227,6 +9243,8 @@ webpack@^5.64.4:
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 webrtc-adapter@^7.2.1:
   version "7.7.1"
   resolved "https://registry.yarnpkg.com/webrtc-adapter/-/webrtc-adapter-7.7.1.tgz#b2c227a6144983b35057df67bd984a7d4bfd17f1"
@@ -9236,6 +9254,7 @@ webrtc-adapter@^7.2.1:
     sdp "^2.12.0"
 
 >>>>>>> 95974ccc1c4a191e29eb7c8e7cafaacdfb2768b8
+>>>>>>> c4429d22173b41811f5aabc64aa0d8d0adfd229d
 websocket-driver@>=0.5.1, websocket-driver@^0.7.4:
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/websocket-driver/-/websocket-driver-0.7.4.tgz#89ad5295bbf64b480abcba31e4953aca706f5760"

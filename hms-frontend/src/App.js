@@ -6,6 +6,7 @@ import Login from './components/staff.components/admin.components/Login';
 import Admin from './components/staff.components/admin.components/Admin';
 import Doctor from './components/staff.components/doctor.components/Doctor';
 import Customer from './components/customer.components/registration.components/Cusomer';
+import Appointment from './components/customer.components/appointment.components/Customer.appointment.routes';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route path="/login" component={Login} />
       <Route path="/doctor/" component = {Doctor}/>
       <Route path="/customer/" component = {Customer}/>
+      <Route path="/appointment" component={Appointment} />
     </Router>
   );
 }

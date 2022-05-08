@@ -45,3 +45,7 @@ app.use("/register", registerRouter);
 const admitRouter = require("./api/routes/Admit.routes");
 app.use("/Admit", admitRouter);
 
+const appointmentRouter = require("./api/routes/appointment");
+app.use("/appointments", appointmentRouter);
+
+
