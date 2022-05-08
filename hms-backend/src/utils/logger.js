@@ -1,6 +1,5 @@
 import chalk from 'chalk';
 
-
 const logger = (type, message) => {
 
     const info = chalk.bold.green('INFO')+chalk.bold(": ")+chalk.bold.blue(message);
@@ -16,6 +15,5 @@ const logger = (type, message) => {
     }
 
 };
-
 
 export { logger };
